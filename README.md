@@ -7,7 +7,7 @@
 
 # Nolus Snapshot Setup
 
-You can browse the [logs](https://nolus.elessarr.xyz/nolus/log.txt) for current snapshot date, block height, and file size information.
+You can browse the [logs](https://nolus.elessarr.xyz/log.json) for current snapshot date, block height, and file size information.
 
 
 ### Install lz4 (if needed)
@@ -31,7 +31,7 @@ nolusd tendermint unsafe-reset-all --home $HOME/.nolus --keep-addr-book
 
 ### Download & Install the snapshot
 ```
-curl -L https://nolus.elessarr.xyz/nolus.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.nolus --strip-components 2
+curl -L https://nolus.elessarr.xyz/nolus/nolus.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.nolus --strip-components 2
 ```
 
 ### Restart Service & Check Log:

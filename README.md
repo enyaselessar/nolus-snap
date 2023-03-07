@@ -31,7 +31,7 @@ nolusd tendermint unsafe-reset-all --home $HOME/.nolus --keep-addr-book
 
 ### Download & Install the snapshot
 ```
-curl -L https://nolus.elessarr.xyz/nolus/nolus.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.nolus --strip-components 2
+curl -L https://nolus.elessarr.xyz/nolus.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.nolus --strip-components 2
 ```
 
 ### Restart Service & Check Log:
